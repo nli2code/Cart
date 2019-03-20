@@ -6,7 +6,8 @@
     
     `docker run -it -v (che-5.5.0的路径):/repo -v (che的数据存放位置，任意设置):/data -v /var/run/docker.sock:/var/run/docker.sock -e CHE_HOST=(自己的ip地址) eclipse/che:5.5.0 start`
     
-    `docker run -it -v /Users/apple/Downloads/liwp-cart/che-5.5.0:/repo -v /Users/apple/Downloads/liwp-cart/chedata:/data -v /var/run/docker.sock:/var/run/docker.sock -e CHE_HOST=10.0.26.18 eclipse/che:5.5.0 start `
+    
+    例如: `docker run -it -v /Users/apple/Downloads/liwp-cart/che-5.5.0:/repo -v /Users/apple/Downloads/liwp-cart/chedata:/data -v /var/run/docker.sock:/var/run/docker.sock -e CHE_HOST=10.0.26.18 eclipse/che:5.5.0 start `
     
 5. 打开localhost:8080，创建新的workspace（设置中选择java而不是java-mysql）
 6. 创建hello world程序，在任意位置输入`?`，点击上方的三角按钮`▶️`，结果会在下方显示
